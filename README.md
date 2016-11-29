@@ -1,6 +1,8 @@
 # Using Rust in Cocoa apps
 
-Examples for working with the Objective-C runtime from Rust.
+Examples for working with the Objective-C runtime from Rust, with a companion
+[blog post](https://blog.bugsnag.com/building-macos-apps-with-rust) about the
+rationale behind the setup.
 
 Each example is annotated and can be run using `cargo run` or using the
 specialized instructions below, if any.
