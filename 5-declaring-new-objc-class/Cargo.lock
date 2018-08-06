@@ -1,4 +1,4 @@
-[root]
+[[package]]
 name = "5-declaring-new-objc-class"
 version = "0.1.0"
 dependencies = [

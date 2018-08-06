@@ -1,11 +1,11 @@
 extern crate cocoa;
 
 use cocoa::base::{selector, nil, NO, id};
-use cocoa::foundation::{NSUInteger, NSRect, NSPoint, NSSize, NSAutoreleasePool,
+use cocoa::foundation::{NSRect, NSPoint, NSSize, NSAutoreleasePool,
                         NSProcessInfo, NSString};
 
 use cocoa::appkit::{NSApp, NSApplication, NSApplicationActivationPolicyRegular,
-                    NSWindow, NSTitledWindowMask, NSBackingStoreBuffered,
+                    NSWindow, NSWindowStyleMask, NSBackingStoreBuffered,
                     NSMenu, NSMenuItem, NSRunningApplication,
                     NSApplicationActivateIgnoringOtherApps};
 
@@ -33,7 +33,7 @@ unsafe fn focus_app() {
 unsafe fn add_window() {
     let window = NSWindow::alloc(nil).initWithContentRect_styleMask_backing_defer_(
         NSRect::new(NSPoint::new(0., 0.), NSSize::new(200., 200.)),
-        NSTitledWindowMask as NSUInteger,
+        NSWindowStyleMask::NSTitledWindowMask,
         NSBackingStoreBuffered,
         NO
     ).autorelease();
