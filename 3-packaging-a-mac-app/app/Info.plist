@@ -27,6 +27,6 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>RustBinaryName</key>
-	<string>3-packaging-a-mac-app</string>
+	<string>packaging-a-mac-app</string>
 </dict>
 </plist>
